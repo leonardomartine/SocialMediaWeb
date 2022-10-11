@@ -12,7 +12,7 @@
         height:100% !important;
     }
     body{
-      background-image: url("<?php echo validate_image($_settings->info('cover')) ?>");
+      /* background-image: url("<?php echo validate_image($_settings->info('cover')) ?>"); */
       background-size:cover;
       background-repeat:no-repeat;
       backdrop-filter: contrast(1);
@@ -30,12 +30,11 @@
       border-radius: 100% 100%;
     }
   </style>
-  <h1 class="text-center text-white px-4 py-5" id="page-title"><b><?php echo $_settings->info('name') ?></b></h1>
 <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12">
   <!-- /.login-logo -->
-  <div class="card card-navy my-2 rounded-0">
+  <div class="card my-2 rounded-0">
     <div class="card-header rounded-0">
-        <h4 class="card-title">Registration</h4>
+        <h4 class="card-title center">Registration</h4>
     </div>
     <div class="card-body rounded-0">
       <form id="register-form" action="" method="post">
@@ -93,7 +92,7 @@
         </div>
         <div class="row">
           <div class="col-8">
-            <a href="./">Already hava an Account</a>
+            <a href="./">Already have an Account ?</a>
           </div>
           <!-- /.col -->
           <div class="col-4">

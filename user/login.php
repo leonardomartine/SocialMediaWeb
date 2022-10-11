@@ -13,7 +13,7 @@
   </script>
   <style>
     body{
-      background-image: url("<?php echo validate_image($_settings->info('cover')) ?>");
+      /* background-image: url("<?php echo validate_image($_settings->info('cover')) ?>"); */
       background-size:cover;
       background-repeat:no-repeat;
       backdrop-filter: contrast(1);
@@ -23,8 +23,21 @@
       font-size: 3.5em;
       color: #fff4f4 !important;
     }
+
+    .textLine {
+      width: 100%; 
+      text-align: center; 
+      border-bottom: 1px solid #000; 
+      line-height: 0.1em;
+      margin: 10px 0 20px; 
+    } 
+
+    .textLine span { 
+        background:#fff; 
+        padding:0 10px; 
+    }
   </style>
-  <h1 class="text-center text-white px-4 py-5" id="page-title"><b><?php echo $_settings->info('name') ?></b></h1>
+  <!-- <h1 class="text-center text-white px-4 py-5" id="page-title"><b></b></h1> -->
 <div class="login-box w-100 h-75">
   <div class="container h-100">
     <div class="d-flex w-100 px-4 h-100 align-items-center">
@@ -50,11 +63,12 @@
           </div>
         </div>
       </div>
+
       <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
         <!-- /.login-logo -->
         <div class="card card-navy my-2">
           <div class="card-body">
-            <p class="login-box-msg">Please enter your credentials</p>
+            <p class="login-box-msg"><img style="height: 30px;" src="../uploads/socialgram.png" /> SocialGram</p>
             <form id="ulogin-frm" action="" method="post">
               <div class="input-group mb-3">
                 <input type="text" class="form-control" name="email" autofocus placeholder="Email">
@@ -73,17 +87,31 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-8">
-                  <a href="./register.php">Create an Account</a>
-                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                  </div>  
                 <!-- /.col -->
-                <div class="col-4">
-                  <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+              </div>
+              <div class="row" style="margin-top: 20px;">
+                <div class="col-12 textLine">
+                  <span>OR</span>
                 </div>
-                <div class="col-12 text-center">
-                  <a href="<?= base_url ?>admin">Admin Site</a>
-                </div>
-                <!-- /.col -->
+              </div>
+              <div class="row" style="margin-top: 10px;">
+                <div class="col-2"></div>
+                <div class="col-8" style="text-align: center;">
+                    Don't have an account ?  
+                    <a href="./register.php">Create an Account</a>
+                  </div> 
+                  <div class="col-2"></div>               
+              </div>
+
+              <hr>
+
+              <div class="row" style="margin-top: 20px;">
+                    <div class="col-12 text-center">
+                    <a href="<?= base_url ?>admin">Admin Site</a>
+                  </div>
               </div>
             </form>
             <!-- /.social-auth-links -->
