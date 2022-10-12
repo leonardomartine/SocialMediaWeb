@@ -8,7 +8,7 @@
   </script>
   <style>
     body{
-      background-image: url("<?php echo validate_image($_settings->info('cover')) ?>");
+      /* background-image: url("<?php echo validate_image($_settings->info('cover')) ?>"); */
       background-size:cover;
       background-repeat:no-repeat;
       backdrop-filter: contrast(1);
@@ -20,12 +20,12 @@
       background: #8080801c;
     }
   </style>
-  <h1 class="text-center text-white px-4 py-5" id="page-title"><b><?php echo $_settings->info('name') ?></b></h1>
+  <!-- <h1 class="text-center text-white px-4 py-5" id="page-title"><b><?php echo $_settings->info('name') ?></b></h1> -->
 <div class="login-box">
   <!-- /.login-logo -->
   <div class="card card-navy my-2">
     <div class="card-body">
-      <p class="login-box-msg">Please enter your credentials</p>
+    <p class="login-box-msg"><img style="height: 30px;" src="../uploads/socialgram.png" /> SocialGram</p>
       <form id="login-frm" action="" method="post">
         <div class="input-group mb-3">
           <input type="text" class="form-control" name="username" autofocus placeholder="Username">
@@ -45,7 +45,7 @@
         </div>
         <div class="row">
           <div class="col-8">
-            <a href="<?php echo base_url ?>">Go to Website</a>
+            <a href="<?php echo base_url ?>"><u>User Site</u></a>
           </div>
           <!-- /.col -->
           <div class="col-4">

@@ -61,7 +61,18 @@
 <!-- Footer-->
 <footer class="py-5 bg-gradient-dark">
             <div class="container">
-              <p class="m-0 text-center text-white">Copyright &copy; <?php echo $_settings->info('short_name') ?> 2021</p>
+              <div class="text-center">
+                <a class="text-white" href="#"><i>Help</i></a>
+                |
+                <a class="text-white" href="#"><i>About Us</i></a>
+                |
+                <a class="text-white" href="#"><i>Privacy Policy</i></a>
+                |
+                <a class="text-white" href="#"><i>Terms of Use</i></a>
+              </div>
+              <hr>
+              <p class="m-0 text-center text-white">Copyright &copy; SocialGram 2022</p>
+              <p class="m-0 text-center text-white"><i>All rights reserved. Powered by the <b>SocialGram Company</b></i></p>
               <!-- <p class="m-0 text-center text-white">Developed By: <a href="mailto:oretnom23@gmail.com">oretnom23</a></p> -->
           </div>
         </footer>

@@ -4,7 +4,7 @@
 <?php require_once('inc/header.php') ?>
 <style>
   body>.wrapper>.content-wrapper {
-    background-image: url('<?= validate_image($_settings->info('cover')) ?>');
+    /* background-image: url('<?= validate_image($_settings->info('cover')) ?>'); */
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
