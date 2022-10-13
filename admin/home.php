@@ -1,4 +1,4 @@
-<h1>Welcome to <?php echo $_settings->info('name') ?> - Management Site</h1>
+<h1><?php echo $_settings->info('name') ?> Management Site</h1>
 <hr>
 <div class="row">
       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">

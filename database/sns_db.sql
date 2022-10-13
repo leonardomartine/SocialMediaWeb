@@ -143,8 +143,8 @@ CREATE TABLE `system_info` (
 --
 
 INSERT INTO `system_info` (`id`, `meta_field`, `meta_value`) VALUES
-(1, 'name', 'Simple Social Networking Site'),
-(6, 'short_name', 'InstaMage - PHP'),
+(1, 'name', 'SocialGram'),
+(6, 'short_name', 'SocialGram'),
 (11, 'logo', 'uploads/logo.png?v=1651540223'),
 (13, 'user_avatar', 'uploads/user_avatar.jpg'),
 (14, 'cover', 'uploads/cover.png?v=1651540931');

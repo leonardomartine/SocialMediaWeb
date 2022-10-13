@@ -55,13 +55,13 @@
     }
   })
 </script>
-<footer class="main-footer text-sm">
+<footer class="main-footer text-sm" style="color: black;">
         <strong>Copyright © <?php echo date('Y') ?>. 
         <!-- <a href=""></a> -->
         </strong>
         All rights reserved.
-        <div class="float-right d-none d-sm-inline-block">
-          <b><?php echo $_settings->info('short_name') ?> (by: <a href="mailto:oretnom23@gmail.com" target="blank">oretnom23</a> )</b> v1.0
+        <div class="float-right d-none d-sm-inline-block" style="color: black;">
+          <b><?php echo $_settings->info('name') ?></b> v1.0
         </div>
       </footer>
     </div>

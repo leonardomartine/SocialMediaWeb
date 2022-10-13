@@ -13,7 +13,7 @@
                 <button class="navbar-toggler btn btn-sm" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <a class="navbar-brand" href="./">
                 <img src="../uploads/socialgram.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-                <i>SocialGram</i>
+                <i><?php echo $_settings->info('name') ?></i>
                 </a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
