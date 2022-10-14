@@ -1,3 +1,4 @@
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <style>
 	.avatar-img{
       height: 3em;
@@ -14,7 +15,8 @@
        while($row = $qry->fetch_assoc()):
 			  $qry_like = $conn->query("SELECT post_id FROM `like_list` where post_id = '{$row['id']}' and member_id = '{$_settings->userdata('id')}'")->num_rows > 0;
       ?>
-      <div class="card rounded-0 shadow">
+	  
+      <div class="card rounded-0 shadow" data-aos="fade-up" data-aos-duration="1000">
         <div class="card-body">
           <div class="container-fluid">
             <div class="d-flex w-100 align-items-center">
@@ -124,11 +126,16 @@
             </div>
           </div>
         </div>
+		
       </div>
       <?php endwhile; ?>
     </div>
   </div>
 </div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script>
   $(function(){
     $('.delete-comment').click(function(){

@@ -9,6 +9,7 @@
     <!-- <link rel="icon" href="<?php echo validate_image($_settings->info('logo')) ?>" /> -->
   <link rel="icon" href="../uploads/socialgram.png">
   <link rel="stylesheet" href="../libs/css/styleDBE.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Google Font: Source Sans Pro -->
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&amp;display=fallback"> -->
     <!-- Font Awesome -->
